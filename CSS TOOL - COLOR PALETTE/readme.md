@@ -1,3 +1,2 @@
 Visit Given Link To Interact Live Website :-
-
-https://color-palette.pages.dev
+https://color-plate.pages.dev/
