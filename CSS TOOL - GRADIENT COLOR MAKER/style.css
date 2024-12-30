@@ -107,3 +107,8 @@ body {
 .buttons .copy {
     background: #bb86fc;
 }
+
+.source{
+    color: #bb86fc;
+    text-decoration: none;
+}
