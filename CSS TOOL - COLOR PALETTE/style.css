@@ -67,6 +67,15 @@
      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
      transform: translateX(-50%);
  }
+
+ marquee{
+    color: aliceblue;
+    margin: 12px;
+ }
+ .source{
+    color: #bb86fc;
+    text-decoration: none;
+}
  
  @media screen and (max-width: 510px) {
      .container {
