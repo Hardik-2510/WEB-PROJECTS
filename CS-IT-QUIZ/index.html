@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPUTER ENGINEERING QUIZ | DesiDevelpoers </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <button class="theme-toggle-btn" id="theme-toggle-btn">
+        <span id="theme">THEME : LIGHT </span>&nbsp;<i class="fa fa-sun-o"></i>
+    </button>
+
+
     <div class="main-display">
-    <div class="config-container">
-        <h2>CS | IT QUIZ </h2>
-        
-        <div class="config-option">
-        <h4 class="option-title">Select Subject </h4>
-        <div class="category-options">
-            <button class="category-option active" title="Web Development">Web Development</button>
-            <button class="category-option" title="Object Oriented Programming with Java">OOPs With Java</button>
-            <button class="category-option" title="Data Structures">Data Structures</button>
-            <button class="category-option" title="Database Management System ">Database Management System</button>
-            <button class="category-option" title="Programming With C">Programming With C</button>
-            <button class="category-option" title="Fundamental of C++">Fundamental of C++</button>
-        </div>
-    </div>
+        <div class="config-container">
+            <h2>CS | IT QUIZ </h2>
 
-    <div class="config-option">
-        <h4 class="option-title">No. of Questions</h4>
-        <div class="question-options">
-            <button class="question-option active">5</button>
-            <button class="question-option">10</button>
-            <button class="question-option">15</button>
-            <button class="question-option">20</button>
-            <button class="question-option">25</button>
-        </div>
-    </div>
-
-        <button class="start-quiz-btn">Start Quiz</button>
-    </div>
-    <div class="quiz-container">
-        <header class="quiz-header">
-            <h2 class="quiz-title">Quiz Application </h2>
-            <div class="quiz-timer">
-                <span class="material-symbols-rounded">timer</span>
-                <p class="time-duration"></p>
+            <div class="config-option">
+                <h4 class="option-title">Select Subject </h4>
+                <div class="category-options">
+                    <button class="category-option active" title="Web Development">Web Development</button>
+                    <button class="category-option" title="Object Oriented Programming with Java">OOPs With
+                        Java</button>
+                    <button class="category-option" title="Data Structures">Data Structures</button>
+                    <button class="category-option" title="Database Management System ">Database Management
+                        System</button>
+                    <button class="category-option" title="Programming With C">Programming With C</button>
+                    <button class="category-option" title="Fundamental of C++">Fundamental of C++</button>
+                </div>
             </div>
-        </header>
-        
-        <div class="quiz-content">
-            <h1 class="question-text"></h1>
-            <ul class="answer-options"></ul>
+
+            <div class="config-option">
+                <h4 class="option-title">No. of Questions</h4>
+                <div class="question-options">
+                    <button class="question-option active">5</button>
+                    <button class="question-option">10</button>
+                    <button class="question-option">15</button>
+                    <button class="question-option">20</button>
+                    <button class="question-option">25</button>
+                </div>
+            </div>
+
+            <button class="start-quiz-btn">Start Quiz</button>
+        </div>
+        <div class="quiz-container">
+            <header class="quiz-header">
+                <h2 class="quiz-title">Quiz Application </h2>
+                <div class="quiz-timer">
+                    <span class="material-symbols-rounded">timer</span>
+                    <p class="time-duration"></p>
+                </div>
+            </header>
+
+            <div class="quiz-content">
+                <h1 class="question-text"></h1>
+                <ul class="answer-options"></ul>
+            </div>
+
+            <div class="quiz-footer">
+                <p class="question-status"></p>
+                <button class="next-question-btn">
+                    Next
+                    <span class="material-symbols-rounded">arrow_right_alt</span>
+                </button>
+            </div>
+        </div>
+        <div class="result-container">
+            <img src="quiz-over.png" alt="Quiz Over" class="result-img">
+            <h2 class="result-title">Quiz Completed !</h2>
+            <p class="result-message"></p>
+            <button class="try-again-btn">Try Again !</button>
         </div>
 
-        <div class="quiz-footer">
-            <p class="question-status"></p>
-            <button class="next-question-btn">
-                Next
-                <span class="material-symbols-rounded">arrow_right_alt</span>
-            </button>    
+        <div class="footer">
+            <div class="dev-info">
+                <marquee>This QUIZ is Powered By DesiDevelpoers ||<span style="color:#A9CCE3;"> Developed By Hardik
+                        Patel ||</span>
+                    &nbsp;
+                    &nbsp;
+                    <a href="https://www.facebook.com/profile.php?id=100089838506031&mibextid=ZbWKwL"><i
+                            class="fa fa-x fa-facebook"></i></a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="http://wa.me/+916354067037"><i class="fa fa-x fa-whatsapp"></i></a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="https://instagram.com/hardik_2510__"><i class="fa fa-x fa-instagram"></i></a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="https://linkedin.com/in/hardik-patel-0b3116287/"><i class="fa fa-x fa-linkedin"></i></a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="https://github.com/Hardik-2510"><i class="fa fa-x fa-github"></i></a>
+                </marquee>
+            </div>
         </div>
     </div>
-    <div class="result-container">
-        <img src="quiz-over.png" alt="Quiz Over" class="result-img">
-        <h2 class="result-title">Quiz Completed !</h2>
-        <p class="result-message"></p>
-        <button class="try-again-btn">Try Again !</button>
-    </div>
 
-    <div class="footer">
-        <div class="dev-info">
-            <marquee>This QUIZ is Powered By DesiDevelpoers ||<span style="color:#A9CCE3;"> Developed By Hardik Patel ||</span>  
-                &nbsp;
-                &nbsp;
-                <a href="https://www.facebook.com/profile.php?id=100089838506031&mibextid=ZbWKwL"><i class="fa fa-x fa-facebook"></i></a>
-                &nbsp;
-                &nbsp;
-                <a href="http://wa.me/+916354067037"><i class="fa fa-x fa-whatsapp"></i></a>
-                &nbsp;
-                &nbsp;
-                <a href="https://instagram.com/hardik_2510__"><i class="fa fa-x fa-instagram"></i></a>
-                &nbsp;
-                &nbsp;
-                <a href="https://linkedin.com/in/hardik-patel-0b3116287/"><i class="fa fa-x fa-linkedin"></i></a>
-                &nbsp;
-                &nbsp;
-                <a href="https://github.com/Hardik-2510"><i class="fa fa-x fa-github"></i></a>
-            </marquee>
-        </div>
-    </div>
-</div>
-
-<script src="questions.js"></script>
-<script src="script.js"></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

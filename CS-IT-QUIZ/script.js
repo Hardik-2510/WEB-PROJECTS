@@ -148,3 +148,44 @@ nextQuestionBtn.addEventListener("click", renderQuestion);
 
 // Try Again button
 document.querySelector(".try-again-btn").addEventListener("click", resetQuiz);
+
+// Add this to your script.js
+
+const themeToggleBtn = document.getElementById("theme-toggle-btn");
+const themeText = document.getElementById("theme");
+
+themeToggleBtn.addEventListener("click", () => {
+    // Toggle dark/light mode on body
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+    
+    // Toggle icon between moon and sun
+    const icon = themeToggleBtn.querySelector("i");
+    if (document.body.classList.contains("dark-mode")) {
+        icon.classList.add("fa-moon-o");
+        icon.classList.remove("fa-sun-o");
+        themeText.textContent = "Theme : Dark";
+    } else {
+        icon.classList.add("fa-sun-o");
+        icon.classList.remove("fa-moon-o");
+        themeText.textContent = "Theme : Light";
+    }
+});
+
+// Set the initial theme based on localStorage (if previously saved)
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggleBtn.querySelector("i").classList.replace("fa-moon-o", "fa-sun-o");
+} else {
+    document.body.classList.add("light-mode");
+    themeToggleBtn.querySelector("i").classList.replace("fa-sun-o", "fa-moon-o");
+}
+
+// Save the theme preference to localStorage
+themeToggleBtn.addEventListener("click", () => {
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+});

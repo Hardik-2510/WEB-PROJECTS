@@ -295,3 +295,82 @@ body {
    .fa-linkedin{
     color:#0077B5;
    }
+
+   /* Add this CSS in your style.css */
+
+.theme-toggle-btn {
+    position: fixed;
+    top: 0px;
+    margin: 12px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #EDF2F4;
+    cursor: pointer;
+    z-index: 100;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode , .fa {
+    background-color: #2B2D42; 
+    color: #EDF2F4;
+}
+
+body.dark-mode .config-container,
+body.dark-mode .quiz-container,
+body.dark-mode .result-container {
+    margin-top: 5%;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+
+body.dark-mode .quiz-header {
+    background-color: #1f2230;
+}
+
+body.dark-mode .answer-option {
+    background-color: #444b6f;
+    border-color: #8D99AE;
+    color: #edf2f4;
+}
+
+body.dark-mode .quiz-footer {
+    background-color: #2B2D42;
+}
+
+body.light-mode {
+    background-color: #EDF2F4; 
+    color: #2B2D42; 
+}
+
+body.light-mode .config-container,
+body.light-mode .quiz-container,
+body.light-mode .result-container {
+    margin-top: 5%;
+    background-color: #ffffff;
+    color: #2B2D42;
+}
+
+body.light-mode .quiz-header {
+    background-color: #ffffff;
+}
+
+body.light-mode .answer-option {
+    background-color: #F4F1DE; 
+    border-color: #E07A5F; 
+    color: #2B2D42;
+}
+
+body.light-mode .quiz-footer {
+    background-color: #ffffff;
+}
+
+body.light-mode span{
+    color: black;
+}
+
+body.light-mode .fa{
+    background-color: #EDF2F4;
+    color: #2B2D42;
+}
