@@ -165,10 +165,12 @@ themeToggleBtn.addEventListener("click", () => {
         icon.classList.add("fa-moon-o");
         icon.classList.remove("fa-sun-o");
         themeText.textContent = "Theme : Dark";
+        themeText.style.transition = '1s Ease-in';
     } else {
         icon.classList.add("fa-sun-o");
         icon.classList.remove("fa-moon-o");
         themeText.textContent = "Theme : Light";
+        themeText.style.transition = '1s Ease-in';
     }
 });
 
